@@ -50,8 +50,7 @@
 
       if (!hrefAttribute || !hrefAttribute.includes('#') && !hrefAttribute.startsWith('.')) {
         return null;
-      } // Just in case some CMS puts out a full URL with the anchor appended
-
+      } // Just in case some CMS puts out a full URL with the anchor appende
 
       if (hrefAttribute.includes('#') && !hrefAttribute.startsWith('#')) {
         hrefAttribute = `#${hrefAttribute.split('#')[1]}`;
